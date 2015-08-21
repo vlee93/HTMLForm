@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>HTML Form</title>
+</head>
+<body>
+
+<form action="ProcessForm" method="post" role="form">
+<label for="First">First Name: </label>
+<input type="text" name="firstname" value="Mickey">
+<br>
+<label for="Last">Last Name: </label>
+<input type="text" name="lastname" value="Mouse"><br>
+<br><br>
+<label name = "species" for="Species">Species: </label>
+<select>
+  <optgroup label="Predator">
+  <option name = "human" value="human">Human</option>
+  <option name = "dog" value="dog">Dog</option>
+  </optgroup>
+  <optgroup label="Prey">
+  <option name = "mouse" value="mouse">Mouse</option>
+  <option name = "duck" value="duck">Duck</option>
+  </optgroup> <br>
+  <p></p>
+  <br><label name = "description" for="Description"> Description: </label><br>
+<textarea rows="4" cols="50">
+Mickey Mouse was the first hit cartoon creation by Walt Disney.
+</textarea> 
+</select>
+<input type="submit" value="Submit">
+</form>
+
+
+<button type="button">Click Me! I do nothing</button> 
+
+</body>
+</html>
