@@ -27,7 +27,11 @@ public class ProcessForm extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    	String first = request.getParameter("firstname");
+    	}
+
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String first = request.getParameter("firstname");
     	String last = request.getParameter("lastname");
         String species = request.getParameter("species");
         String descrip = request.getParameter("description");
@@ -37,11 +41,7 @@ public class ProcessForm extends HttpServlet {
 		request.setAttribute("total", total);
 		getServletContext().getRequestDispatcher("/output.jsp").forward(request, response);
         
-	}
-
-
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+	
 	}
 
 }
